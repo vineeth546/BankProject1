@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;
+background-color: transparent;
+}
+.container{
+  background-position: center;
+  background-repeat: no-repeat;
+  image-resolution:100px;
+  width: auto;
+}
+
+.navbar {
+  width: 100%;
+  height: 45px;;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #ce9d65;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* .bg {
+  background-image: url("images/bg-main.jfif");
+
+
+  height: 100%; 
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+</style>
+<body>
+  <nav>
+  <div class="navbar">
+  <a href="Customeroperations.html"> Customer</a> 
+  <a href="CheckBalance.html"> Check Balance</a>
+  <a href="DepositMoney.html">Deposit Money</a> 
+  <a  class="active" href="#">Money Withdrawl</a>
+  <a href="TransferMoney.html"> Transfer Money</a>
+</div>
+</nav>
+<!-- <h2 style="font-family: sans-serif;"><strong> Welcome to Revature Bank </strong></h2>
+<strong><h3><p>You can perform Some Actions using the Customer and Employee</p><br>
+<p>Have a great day.</p></strong></h3>
+
+<div class="container">
+  <img src="images/bg-main.jfif" width="100%" > -->
+
+  <div class="modal-body">
+        
+    <p>Enter The Details to Withdraw Amount</p>
+    <form action="MoneyWithdrawl" method="post">
+      <p>Customer ID</p>
+      <input type="number" name="Id" required>
+      <p>Customer Name</p>
+      <input type="text" name="userName" id="userName">
+      <p>Amount For Withdrawl</p>
+      <input type="number" name="money"  required>
+      <p>password</p>
+      <input type="password" name="password" required>
+      <br>
+	</div>
+	<div class="modal-footer">
+	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	<button type="submit" class="btn btn-primary">withdraw</button>
+	</form>
+	</div>
+</body>
+</html> 
