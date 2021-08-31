@@ -13,3 +13,5 @@ Description : The Bank app is a console-based application that simulates banking
 * As a customer, I can post a money transfer to another account.
 * As a customer, I can accept a money transfer from another account. 
 * A an employee, I can view a log of all transactions.
+* Technologies used
+* HTML, REST, Maven, Git, Hibernate, JavaScript, AWS S3.
